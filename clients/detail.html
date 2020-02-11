@@ -20,13 +20,13 @@
 
 </head>
 
-<body id="page-top">
+<body id="page-top" class="sidebar-toggled">
 
   <!-- Page Wrapper -->
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion toggled" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../index.html">
@@ -41,7 +41,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="../index.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
@@ -170,7 +170,7 @@
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800">Client Detail - Joe Client</h1>
-            <a href="edit.html" class="d-none d-sm-inline-block btn btn-primary btn-icon-split">
+            <a href="edit.html" class="d-sm-inline-block btn btn-success btn-icon-split">
                 <span class="icon text-white-50">
                     <i class="fas fa-pencil-alt"></i>
                 </span>
@@ -186,7 +186,7 @@
               <div class="card mb-2">
                 <!-- Card Header -->
                 <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Contact Details</h6>
+                  <h6 class="m-0 font-weight-bold text-success">Contact Details</h6>
                 </div>
                 <div class="card-body">
                     <p>Contact Name: John Doe</p>
@@ -251,12 +251,12 @@
               <div class="card mb-2">
                 <!-- Card Header -->
                 <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Servers</h6>
+                  <h6 class="m-0 font-weight-bold text-warning">Servers</h6>
                 </div>
                 <div class="card-body">
                     <ul>
-                        <li><a href="../servers/detail.html">Server 1</a></li>
-                        <li><a href="../servers/detail.html">Server 2</a></li>
+                        <li><a href="../servers/detail.html" class="text-warning">Server 1</a></li>
+                        <li><a href="../servers/detail.html" class="text-warning">Server 2</a></li>
                     </ul>
                 </div>
               </div>
@@ -266,12 +266,12 @@
               <div class="card mb-2">
                 <!-- Inactive Projects -->
                 <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Active Tasks</h6>
+                  <h6 class="m-0 font-weight-bold text-info">Active Tasks</h6>
                 </div>
                 <div class="card-body">
                     <ul>
-                        <li><a href="../tasks/detail.html">Task 1</a></li>
-                        <li><a href="../tasks/detail.html">Task 2</a></li>
+                        <li><a href="../tasks/detail.html" class="text-info">Task 1</a></li>
+                        <li><a href="../tasks/detail.html" class="text-info">Task 2</a></li>
                     </ul>
                 </div>
               </div>
@@ -288,11 +288,10 @@
           <div class="row mb-5">
             <div class="col-lg-12 mb-4">
 
-              <!-- Client Details -->
               <div class="card mb-2">
                 <div class="card-body">
                     <p>Posted: January 21, 2020 4:17 pm
-                      <a href="edit_note.html" class="d-none d-sm-inline-block btn btn-sm btn-primary btn-icon-split float-right">
+                      <a href="edit_note.html" class="d-xs-block d-sm-inline-block btn btn-sm btn-success btn-icon-split float-sm-right">
                         <span class="icon text-white-50">
                             <i class="fas fa-pencil-alt"></i>
                         </span>
@@ -306,7 +305,7 @@
               <div class="card mb-2">
                 <div class="card-body">
                     <p>Posted: June 21, 2019 11:21 am
-                      <a href="edit_note.html" class="d-none d-sm-inline-block btn btn-sm btn-primary btn-icon-split float-right">
+                      <a href="edit_note.html" class="d-xs-block d-sm-inline-block btn btn-sm btn-success btn-icon-split float-sm-right">
                         <span class="icon text-white-50">
                             <i class="fas fa-pencil-alt"></i>
                         </span>
@@ -320,7 +319,7 @@
               <div class="card mb-2">
                 <div class="card-body">
                     <p>Posted: June 11, 2019 10:30 am
-                      <a href="edit_note.html" class="d-none d-sm-inline-block btn btn-sm btn-primary btn-icon-split float-right">
+                      <a href="edit_note.html" class="d-xs-block d-sm-inline-block btn btn-sm btn-success btn-icon-split float-sm-right">
                         <span class="icon text-white-50">
                             <i class="fas fa-pencil-alt"></i>
                         </span>
@@ -333,7 +332,7 @@
 
             </div>
             <div class="col-lg-12 mb">
-              <a href="add_note.html" class="d-none d-sm-inline-block btn btn-primary btn-icon-split">
+              <a href="add_note.html" class="d-xs-block d-sm-inline-block btn btn-success btn-icon-split">
                 <span class="icon text-white-50">
                     <i class="fas fa-plus"></i>
                 </span>

@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Delete Project</title>
+  <title>Delete Task</title>
 
   <!-- Custom fonts for this template-->
   <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -20,13 +20,13 @@
 
 </head>
 
-<body id="page-top">
+<body id="page-top" class="sidebar-toggled">
 
   <!-- Page Wrapper -->
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion toggled" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../index.html">
@@ -41,7 +41,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="../index.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
@@ -57,15 +57,15 @@
       </li>
 
       <!-- Nav Item - Projects -->
-      <li class="nav-item active">
-        <a class="nav-link" href="list.html">
+      <li class="nav-item">
+        <a class="nav-link" href="../projects/list.html">
           <i class="fas fa-fw fa-folder"></i>
           <span>Projects</span></a>
       </li>
 
       <!-- Nav Item - Tasks -->
-      <li class="nav-item">
-        <a class="nav-link" href="../tasks/list.html">
+      <li class="nav-item active">
+        <a class="nav-link" href="list.html">
           <i class="fas fa-fw fa-tasks"></i>
           <span>Tasks</span></a>
       </li>
@@ -179,7 +179,7 @@
 
                 <p class="message warning">Are you sure you want to delete this project?</p>
 
-                <a href="detail.html" class="btn btn-lg btn-primary">Cancel</a>
+                <a href="detail.html" class="btn btn-lg btn-info">Cancel</a>
                 <button type="submit" class="btn btn-lg btn-danger">Delete Project</button>
 
               </div>

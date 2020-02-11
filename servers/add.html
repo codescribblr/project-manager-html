@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Add New Client</title>
+  <title>Add New Server</title>
 
   <!-- Custom fonts for this template-->
   <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -20,13 +20,13 @@
 
 </head>
 
-<body id="page-top">
+<body id="page-top" class="sidebar-toggled">
 
   <!-- Page Wrapper -->
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion toggled" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../index.html">
@@ -41,7 +41,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="../index.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
@@ -50,8 +50,8 @@
       <hr class="sidebar-divider">
 
       <!-- Nav Item - Clients -->
-      <li class="nav-item active">
-        <a class="nav-link" href="list.html">
+      <li class="nav-item">
+        <a class="nav-link" href="../clients/list.html">
           <i class="fas fa-fw fa-users"></i>
           <span>Clients</span></a>
       </li>
@@ -71,8 +71,8 @@
       </li>
 
       <!-- Nav Item - Servers -->
-      <li class="nav-item">
-        <a class="nav-link" href="../servers/list.html">
+      <li class="nav-item active">
+        <a class="nav-link" href="list.html">
           <i class="fas fa-fw fa-server"></i>
           <span>Servers</span></a>
       </li>
@@ -169,34 +169,43 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Add New Client</h1>
+            <h1 class="h3 mb-0 text-gray-800">Add New Server</h1>
           </div>
 
           <form method="POST" action="">
           <!-- Content Row -->
             <div class="row">
               <div class="col-lg-6 mb-4">
+                <div class="form-group">
+                  <label for="name">Server Hostname</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter hostname">
+                </div>
+                <div class="form-group">
+                  <label for="ip">Server Public IP</label>
+                  <input type="text" class="form-control" id="ip" placeholder="Enter public ip">
+                </div>
+                <div class="form-group">
+                  <label for="platform">Platform</label>
+                  <select id="platform" class="custom-select">
+                    <option>Digital Ocean</option>
+                    <option>AWS</option>
+                  </select>
+                  <small id="emailHelp" class="form-text text-muted">Select the appropriate platform.</small>
+                </div>
+                <div class="form-group">
+                  <label for="cost">Server Monthly Cost</label>
+                  <input type="text" class="form-control" id="cost" placeholder="Enter monthly cost">
+                </div>
+                <div class="form-group">
+                  <label for="total_slots">Server Total Slots</label>
+                  <input type="text" class="form-control" id="total_slots" placeholder="Enter total slots">
+                </div>
+                <div class="form-group">
+                  <label for="capacity">Server Capacity</label>
+                  <textarea rows="5" type="text" class="form-control" id="capacity" placeholder="Enter capacity description"></textarea>
+                </div>
 
-                <div class="form-group">
-                  <label for="name">Client Name</label>
-                  <input type="text" class="form-control" id="name" placeholder="Enter client name">
-                </div>
-                <div class="form-group">
-                  <label for="contact_name">Contact Name</label>
-                  <input type="text" class="form-control" id="contact_name" placeholder="Enter contact name">
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Contact Email</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div>
-                <div class="form-group">
-                  <label for="phone">Contact Phone</label>
-                  <input type="tel" class="form-control" id="phone" placeholder="Enter phone">
-                </div>
-
-                <button type="submit" class="btn btn-lg btn-primary">Create Client</button>
-
+                <button type="submit" class="btn btn-lg btn-primary">Add Server</button>
               </div>
             </div>
           </form>

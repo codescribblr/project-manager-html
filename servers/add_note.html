@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Add Client Note</title>
+  <title>Add Server Note</title>
 
   <!-- Custom fonts for this template-->
   <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -20,13 +20,13 @@
 
 </head>
 
-<body id="page-top">
+<body id="page-top" class="sidebar-toggled">
 
   <!-- Page Wrapper -->
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion toggled" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../index.html">
@@ -41,7 +41,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="../index.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
@@ -50,8 +50,8 @@
       <hr class="sidebar-divider">
 
       <!-- Nav Item - Clients -->
-      <li class="nav-item active">
-        <a class="nav-link" href="list.html">
+      <li class="nav-item">
+        <a class="nav-link" href="../clients/list.html">
           <i class="fas fa-fw fa-users"></i>
           <span>Clients</span></a>
       </li>
@@ -71,8 +71,8 @@
       </li>
 
       <!-- Nav Item - Servers -->
-      <li class="nav-item">
-        <a class="nav-link" href="../servers/list.html">
+      <li class="nav-item active">
+        <a class="nav-link" href="list.html">
           <i class="fas fa-fw fa-server"></i>
           <span>Servers</span></a>
       </li>
@@ -169,7 +169,7 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Add Note - John Doe</h1>
+            <h1 class="h3 mb-0 text-gray-800">Add Note - web01.mydomain.com</h1>
           </div>
 
           <form method="POST" action="">
@@ -178,11 +178,11 @@
               <div class="col-lg-6 mb-4">
 
                 <div class="form-group">
-                  <label for="name">Client Name</label>
+                  <label for="name">Note Details</label>
                   <textarea class="form-control" id="name" placeholder="Enter note"></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-lg btn-primary">Create Note</button>
+                <button type="submit" class="btn btn-lg btn-warning">Create Note</button>
 
               </div>
             </div>
